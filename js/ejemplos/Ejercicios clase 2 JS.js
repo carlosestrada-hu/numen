@@ -32,53 +32,61 @@ function divide(x, y) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  console.log(x % y);
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Tu código:
+  console.log(Math.pow(num, 2));
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(x===y);
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(str1.length === str2.length);
 }
 
-function menosQueNoveta(num) {
+function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(num < 90);
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(num > 50);
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(num % 2 == 0);
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  console.log(num % 2 != 0);
 }
 
 function comparacion() {
   //Asigna valores para val1 y val2 de modo que ingrese a la instrucción if:
-  const val1 
-  const val2 
+  const val1 = 1;
+  const val2 = 2;
   if (val1 && val2) {
     console.log("Entramos en la declaración if");
   }
