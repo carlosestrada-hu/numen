@@ -93,25 +93,25 @@ function comparacion() {
 }
 
 function flujoCondicional() {
-    const valor1 //asingar como valor el resultado de una operacion de comparacion
-    const valor2 
-  
-    //establecer los valores de valor1 y valor 2 para obtener los siguientes resultados:
-    //'segundo if'
-    //'primer if', y 'else final'
-    //'primer if', y 'else if'
-    //'else final'
-    if (valor1) {
-      console.log("primer if");
-    }
-    if (valor2 && !valor1) {
-      console.log("segundo if");
-    } else if (valor2 <= 12) {
-      console.log("entrada al else if");
-    } else {
-      console.log("else final");
-    }
+  const valor1 = 2 < 20 //asingar como valor el resultado de una operacion de comparacion
+  const valor2 = 30
+
+  //establecer los valores de valor1 y valor 2 para obtener los siguientes resultados:
+  //'segundo if'
+  //'primer if', y 'else final'
+  //'primer if', y 'else if'
+  //'else final'
+  if (valor1) {
+    console.log("primer if");
   }
+  if (valor2 && !valor1) {
+    console.log("segundo if");
+  } else if (valor2 <= 12) {
+    console.log("entrada al else if");
+  } else {
+    console.log("else final");
+  }
+}
   
 /* 
     Crear un objeto sobre una temática a elección que contenga :
@@ -120,6 +120,18 @@ function flujoCondicional() {
     - Un dato tipo boolean
     - Una función
 */
+const miAuto = {
+  marca: 'Chevrolet',
+  modelo: 'Spin',
+  puertas: 4,
+  activo: true,
+
+  detalle: function(){
+    console.log('Detalle Auto '+this.marca+' '+this.modelo+' '+this.puertas+' Funciona? '+this.activo);
+  }
+}
+//console.log(Object.values(miAuto));
+console.log(miAuto.detalle());
 
 /* 
     Crear un array sobre un temática a elección que contenga:
@@ -131,3 +143,10 @@ function flujoCondicional() {
     Una vez creado remover del ultimo indice (el cual es un array) el primer y ultimo valor y agregarle el string "Primero" al comienzo, 
     y el string "Ultimo" al final. Utilizar los métodos vistos en clase.
 */
+const miArray = ["Carlos",47,true, [13,17,20]]
+console.log(miArray)
+miArray[3].shift(13);
+miArray[3].unshift('Primero');
+miArray[3].pop();
+miArray[3].push('Último');
+console.log(miArray)
